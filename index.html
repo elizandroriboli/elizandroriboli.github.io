@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Elizandro Riboli - Desenvolvedor WEB</title>
+		<link rel="shortcut icon" href="img/iconlogo.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<script type="text/javascript" src="js/scripts.js"></script>
+
+	</head>
+	<body>
+		<div id="container">
+			<div class="navegacao">
+				<header>
+						<nav id="menu">
+							<a href="#"><img src="img/logo.png" id="logo"></a>
+							<ul>
+								<li><a href="index.php">Home</a></li>
+								<li><a href="#sobre">Sobre</a></li>
+								<li><a href="#portfolio">Portfólio</a></li>
+								<li><a href="#contato">Contato</a></li>
+								<li class="social"><a href="https://www.facebook.com/eliriboli" alt="Facebook" title="Facebook" target="_blank">Facebook</a></li>
+								<li class="social"><a href="https://www.linkedin.com/in/elizandroriboli/" alt="Linkedin" title="Linkedin" target="_blank">Linkedin</a></li>
+							</ul>
+						</nav>
+				</header>	
+			</div>
+		</div>				 
+			
+		<section class="conteudo">
+			<p id="saudacao">
+				Olá, <script>saudacao();</script> Seja bem vindo! 
+			</p>
+			<img src="img/eu.png" id="eu">
+		
+			<p id="funcoes">
+				<span>Elizandro Riboli<br></span> 
+				Desenvolvedor/Professor
+			</p>
+		</section>
+
+		<section id="sobre">
+				<h1>Quem sou eu?</h1>
+				Primeiramente, gostaria de agradecer pela visita, é um enorme prazer tê-lo em meu cantinho virtual. <br>
+				Meu nome é Elizandro de Oliveira Riboli, natural de Campinas/SP, atualmente moro em Muzambinho/MG no sul de Minas Gerais.<br>
+				Sou bacharel em Ciência da Computação e até o momento atuei principalmente na área pedagoga, mas sempre me mantendo estudando e buscando mais conhecimento na área de desenvolvimento.
+
+				<h1>Habilidades</h1>
+				Tenho por característica não me prender a somente um lado da moeda. E por isso procuro sempre diversificar o meu conhecimento. Aprendendo tanto front-end, back-end e chegando até linguagens desktop. A seguir meus principais conhecimentos: 
+					<div id="skills">
+						<img src="img/skills/html5.png" title="HTML 5"> 	
+						<img src="img/skills/css3.png" title="CSS 3">
+						<img src="img/skills/js.png" title="Javascript">
+						<img src="img/skills/bootstrap.png" title="Bootstrap"><br>
+						<img id="col2" src="img/skills/php.png" title="PHP">
+						<img id="col2" src="img/skills/sql.png" title="SQL">
+						<img id="col2" src="img/skills/c++.png" title="C++">
+					</div><br>
+				Para conhecer um pouco mais sobre mim: <button><a href="doc/Curriculo1.pdf" download="Curriculo.pdf">Clique Aqui</button></a>					
+		</section>
+
+		<section id="portfolio">
+				<br><h1>Portfólio</h1>
+   				<ul class="lista"> 
+        			<li class="item">
+            			<figure class="image">
+                    		<img src="img/sites/aventureiro.png" alt="Aventureiro">
+                    		<figcaption>
+                                <p>Aventureiro</p>
+                                <a href= # title="Saiba Mais"><i id="mais" class="fas fa-search-plus"></i></a>
+		                   	</figcaption>	
+               			</figure>            			
+        			</li>
+
+        			<li class="item">
+            			<figure class="image">
+                    		<img src="img/sites/baloes.png" alt="Jogo">
+                    		<figcaption>
+                                <p> Jogo Estoura Balões</p>
+                                <a href=baloes/inicio.html title="Saiba Mais"><i id="mais" class="fas fa-search-plus"></i></a>
+		                   	</figcaption>	
+               			</figure>            			
+        			</li>
+        		</ul>
+		</section>
+
+		<section id="contato">
+				<h1>Vamos Conversar!</h1>
+				
+				<div class="form">
+					<h3>Deixe-me uma mensagem</h3>
+					<form action="mail.php" class="formulario" method="post" tabindex="1">  
+				     <input type="text" class="formulario-input" name="nome" placeholder="Nome" required />  
+				     <input type="email" class="formulario-input" name="email" placeholder="E-mail" required />
+				     <input type="text" class="formulario-input" name="telefone" placeholder="Telefone" required />   
+				     <input type="text" class="formulario-input" name="assunto" placeholder="Assunto" required /> 
+				     <textarea class="formulario-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>
+				     <button type="submit" class="formulario-button">Enviar</button>  
+				  </form>  
+				</div>
+				<div class="dados">
+					<h3 id="eles">Entre em contato</h3>
+					<i class="fas fa-envelope"><p id="conv"> - elizandroriboli@gmail.com</p></i>
+					<i class="fab fa-whatsapp-square"><p id="conv"> - (35) 99193-5882</p></i>	
+					<i class="fas fa-home"><p id="conv">- Muzambinho/MG</p></i> 
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13050.621177605593!2d-46.527859646166085!3d-21.371193865618253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b63fd0a5e10b39%3A0x3626ae18ac7ba8d7!2sMuzambinho%2C+MG%2C+37890-000!5e0!3m2!1spt-BR!2sbr!4v1540577802454" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+				</div>
+		</section>
+		<footer>
+				<p>Copyright © 2018 Elizandro Riboli<br>
+				Todos os direitos reservados</p>
+		</footer>
+	</body>
+</html>
