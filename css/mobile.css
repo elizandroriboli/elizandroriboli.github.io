@@ -1,0 +1,246 @@
+@media (max-width: 767px){
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  /*body {
+    overflow-x:auto;
+  }*/
+
+  .toggle {
+    display: block;
+    padding: 12px 12px 17px 12px;
+    background: #fff;
+    position: fixed;
+    top: 35px;
+    left: 40px;
+    z-index: 50;
+    border-radius: 50%;
+    border: 1px solid #9096C9;
+  }
+
+  .icone-burger {
+    width: 1.08em;
+    position: relative;
+    display: inline-block;
+    height: 0.6em;
+    font-size: 1.2em;
+    background: #fff;
+  }
+
+  .icone-burger span {
+    width: 100%;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 0.185em;
+    border-radius: 1.2px;
+    transition: 0.5s all;
+  }
+
+  .icone-burger span:nth-child(1) {
+    top: 0px;
+  }
+
+  .icone-burger span:nth-child(2) {
+    top: 0.36em;
+  }
+
+  .icone-burger span:nth-child(3) {
+    top: 0.73em;
+  }
+
+  #menu {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s all;
+  }
+
+  #icone {
+    display: none;
+  }
+
+  #icone:checked ~ #menu {
+    visibility: visible;
+    opacity: 0.7;
+  }
+
+  #icone:checked ~ .toggle {
+    position: absolute;
+    left: 150px;
+    top: 0;
+  }
+
+  #icone:checked ~ .toggle > .icone-burger span {
+    top: 0.36em;
+  }
+
+  #icone:checked ~ .toggle > .icone-burger span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  #icone:checked ~ .toggle > .icone-burger span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  #icone:checked ~ .toggle > .icone-burger span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  #menu{
+    margin-top: 0;
+  }
+
+  #menu img{
+    width: 70%;
+  }
+
+  #menu ul {
+    top: 200px;
+}
+
+  #menu ul li { 
+    font-size: 18px;
+  }
+
+  #menu ul li a:hover {
+    font-size: 20px;
+  }
+
+  .social a[href*="facebook.com"] {
+    bottom: -35%;
+    margin-left: 15%;
+  }
+
+  .social a[href*="linkedin.com"] {
+    bottom: -35%;
+    margin-left: 47%;
+  }
+
+  #saudacao{
+    display: none;
+  }
+
+  #funcoes{
+    top:75%;
+  }
+
+  .conteudo{
+    width: 100%;
+    font-size: 26px;
+    margin-right: 0;
+  }
+
+  .conteudo #eu {
+    border-radius: 50%;
+    width: 58%;
+    height: 45%;
+    left: 23%;
+    top: 20%;
+  }
+
+  #sobre, #portfolio, #contato{
+    width: 90%;
+    font-size: 15px;
+  }
+
+  h1, h3  #conversar{
+    font-size: 30px;
+  }
+
+  .ajuste{
+    text-align: center;
+  }
+
+  #skills img{
+    width: 20%;
+    height: 15%;
+    margin-top: 15px;
+    margin-right: 5px;
+    left: 5%;
+  }
+
+  #skills #col2{
+    left: 15.5%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .formulario-input, .formulario-textarea,
+  .formulario-button {
+    width: 85%;
+    position: relative;
+    left: 7.5%;
+    font-size: 15px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .formulario-textarea {
+    height: 100px;
+  }
+
+  .formulario-button{
+    margin-bottom: 20px;
+  }
+
+  .dados{
+    width: 100%;
+  }
+
+  .dados i, #conv{
+    font-size: 18px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+  }
+
+  iframe{
+    width: 80%;
+    height: 50%;
+    margin-left: 37px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+  }
+
+  #portfolio .item .image {
+    width:90%;
+    margin-left: 18px;
+  }
+
+  .lista{
+    display: block;
+  }
+
+  .item figure figcaption{
+    width: 100%;
+    height: 96.5%;
+    color: white;
+  }
+
+  button {
+    position: relative;
+    left: 35%;
+   }
+
+  footer{
+    width: 100%;
+    height: 30px;
+    margin-left: -10px;
+    margin-right: 0;
+  }
+
+  footer p{
+    font-size: 9px;
+    top: 5px;
+  }
+}
