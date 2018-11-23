@@ -1,9 +1,10 @@
 #nivel{
 	position: relative;
-	width: 20%;
-	height: 100%;
-	left: 50%;
-	top: 25%;
+	width: 80%;
+	height:auto;
+	top: 10%;
+	text-align: center;
+	left: 18%;
 }
 
 #nivel, #balao p{
@@ -20,7 +21,7 @@
 
 #nivel img{
 	position: absolute;
-	left: 14%;
+	left: 48.5%;
 }
 
 .painel{
@@ -28,13 +29,13 @@
 	width: 12%;
 	height: 500px;
 	right: 60%;
-	top:28%;
+	top:35%;
 	background: #FFF;
 	border: solid 1px #A2A2A2;
 	margin-right: 5px;
 }
 #cenario div{
-	height: 110%;
+	height: auto;
 }
 
 #cenario{
@@ -43,7 +44,7 @@
 	width: 600px;
 	height: 500px;
 	left: 40%;
-	top:28%;
+	top:35%;
 	margin-bottom: 3%;
 	background: url('imagens/cenario.png'); 
 	background-position: bottom;
@@ -69,17 +70,31 @@
 	font-size: 30px;
 }
 
-#balao h1{
+#resposta{
 	position: absolute;
-	float: right;
-	top: 2%;
-	right: 31%;
+	left: 29%;
+	top: 28.5%;
+	font-size: 25px;
 }
 
-#balao p{
-	text-align: center;
-	position: absolute;
-	float: right;
-	top: 15%;
-	right: 5%;	
+input{
+	width: 33%;
+	height: 30px;	
+	border: none;
 }
+
+#again{
+	width: 22%;
+	height: 35px;
+	left: 62%;
+	top: 28%;
+	position: absolute;
+	border-radius: 8px;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	background-color: #9E93CA;
+	border-bottom: 1px solid #6495ED;
+	border-right: 1px solid #6495ED;
+}
+

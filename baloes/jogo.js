@@ -13,11 +13,11 @@ function iniciaJogo(){
 	}
 
 	if(nivel_jogo == 2) { //2 normal -> 60segundos
-		tempo_segundos = 60;
+		tempo_segundos = 80;
 	}
 	
 	if(nivel_jogo == 3) { //3 difícil -> 30segundos
-		tempo_segundos = 30;
+		tempo_segundos = 40;
 	}
 
 	//inserindo segundos no span
@@ -31,6 +31,7 @@ function iniciaJogo(){
 	//imprimir qtde baloes inteiros
 	document.getElementById('baloes_inteiros').innerHTML = qtde_baloes;
 	document.getElementById('baloes_estourados').innerHTML = 0;
+	document.getElementById("again").disabled = true;
 
 	contagem_tempo(tempo_segundos + 1)
 	
@@ -53,7 +54,10 @@ function contagem_tempo(segundos){
 
 function game_over(){
     remove_eventos_baloes();
-    alert('Fim de jogo, você não conseguiu estourar todos os balões a tempo');
+    var perdeu = document.getElementById('resposta');
+    perdeu.innerHTML = 'Você Perdeu. :( Tente novamente!';
+    perdeu.style.color = "red";
+    perdeu.style.fontWeight = 'bold';
 }situacao_jogo:
 
 function cria_baloes(qtde_baloes){
@@ -70,9 +74,9 @@ function cria_baloes(qtde_baloes){
 	}
 }
 
-function estourar(e){
+function estourar(estouro){
 
-	var id_balao = e.id;
+	var id_balao = estouro.id;
 
 	document.getElementById(id_balao).setAttribute("onclick", "");
 	document.getElementById(id_balao).src = 'imagens/balao_azul_pequeno_estourado.png';
@@ -101,8 +105,12 @@ function pontuacao(acao){
 }
 
 function situacao_jogo(baloes_inteiros){
+
 	if(baloes_inteiros == 0){
-		alert('Parabéns, você conseguiu estourar todos os balões a tempo');
+		var ganhou = document.getElementById('resposta');
+    	ganhou.innerText = 'Parabéns. Você acabou de ganhar!';
+    	ganhou.style.color = "green";
+    	ganhou.style.fontWeight = 'bold';
 		parar_jogo();
 	}
 }
