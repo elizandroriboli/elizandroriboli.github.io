@@ -117,12 +117,17 @@
 
   .social a[href*="facebook.com"] {
     bottom: -35%;
-    margin-left: 15%;
+    margin-left: 13%;
   }
 
   .social a[href*="linkedin.com"] {
     bottom: -35%;
-    margin-left: 47%;
+    margin-left: 45%;
+  }
+
+  .social a[href*="github.com"] {
+    bottom: -36%;
+    margin-left: 78%;
   }
 
   #saudacao{
