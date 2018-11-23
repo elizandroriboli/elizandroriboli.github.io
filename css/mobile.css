@@ -4,9 +4,9 @@
     padding: 0;
   }
 
-  /*body {
+  body {
     overflow-x:auto;
-  }*/
+  }
 
   .toggle {
     display: block;
@@ -61,7 +61,7 @@
     z-index: 20;
     visibility: hidden;
     opacity: 0;
-    transition: 0.2s all;
+    transition: 0.5s all;
   }
 
   #icone {
@@ -74,8 +74,8 @@
   }
 
   #icone:checked ~ .toggle {
-    position: absolute;
-    left: 150px;
+    position: fixed;
+    left: 40%;
     top: 0;
   }
 
@@ -200,14 +200,18 @@
 
   .dados i, #conv{
     font-size: 18px;
-    margin-left: 35px;
+    margin-left: 32px;
     margin-bottom: 5px;
+  }
+
+  .dados #conv{
+    margin-left: 4px;
   }
 
   iframe{
     width: 80%;
     height: 50%;
-    margin-left: 37px;
+    margin-left: 34px;
     margin-top: 5px;
     margin-bottom: 40px;
   }
@@ -222,7 +226,7 @@
   }
 
   .item figure figcaption{
-    width: 100%;
+    width: 95%;
     height: 96.5%;
     color: white;
   }
@@ -242,5 +246,99 @@
   footer p{
     font-size: 9px;
     top: 5px;
+  }
+
+  #nivel{
+    width: 100%;
+  }
+
+  #nivel{
+    position: relative;
+    text-align: center;
+    left: 0;
+    top:17%;
+  }
+
+  #nivel p{
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  #nivel select, b{
+    position: relative;
+    left: 31%;
+    font-size: 17px;
+  }
+
+  #nivel img{
+    position: absolute;
+    left: 39%;
+    top: 85%;
+  }
+
+  .painel{
+    width: 85%;
+    height: 10%;
+    right: 6%;
+    top: 40%;
+    display: inline-flex;
+    margin-left:15px;
+  }
+
+  #cenario{
+    width: 86%;
+    height: auto;
+    left: 7%;
+    top:64%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #baloes_inteiros, #baloes_estourados{
+    font-size: 27px;
+    margin: 3px;
+  }
+
+  table img{
+    width: 100%;
+    height: 50%;
+    margin: 3px;
+  }
+
+  #tempo td {
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+
+  #tempo td #cronometro{
+    font-size: 14px;  
+  }
+
+  #tempo{
+    height: 56px;
+  }
+
+  #resposta{
+  left: 8%;
+  top: 51%;
+  font-size: 22px;
+  text-align: center;
+}
+
+  input{
+    width: 85%;
+  }
+
+  #again{
+    width: 50%;
+    height: 30px;
+    left: 26%;
+    top: 57.8%;
+    position: absolute;
+    font-size: 18px;
   }
 }

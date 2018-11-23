@@ -58,7 +58,7 @@ body {
 
 #menu ul li a:hover {
 	text-shadow: none;
-	font-size: 23px;
+	transform: scale(1.2);
 }
 
 #saudacao, #funcoes{
@@ -79,27 +79,40 @@ body {
 	position: absolute;
 	float: left;
 	display: block;
-	text-indent: -9999px;
+	text-indent: -999px;
+}
+
+.social a:hover{
+	transform: scale(1.2);
 }
 
 .social li a{
 	display:  inline-block;
 	text-decoration: none;
-
 }
 
 .social a[href*="facebook.com"] {
 	background-image: url(../img/facebook.png);
 	background-repeat: no-repeat;
+	background-size: 63%;
 	bottom: -45%;
-	margin-left: 15%;
+	margin-left: 13%;
 }
 
 .social a[href*="linkedin.com"] {
 	background-image: url(../img/linkedin.png);
+	background-size: 63%;
 	background-repeat: no-repeat;
 	bottom: -45%;
-	margin-left: 47%;
+	margin-left: 45%;
+}
+
+.social a[href*="github.com"] {
+	background-image: url(../img/github.png);
+	background-repeat: no-repeat;
+	background-size: 60%;
+	bottom: -46%;
+	margin-left: 78%;
 }
 
 .conteudo #eu {
