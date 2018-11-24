@@ -75,7 +75,7 @@
 
   #icone:checked ~ .toggle {
     position: fixed;
-    left: 40%;
+    left: 50%;
     top: 0;
   }
 
@@ -97,18 +97,23 @@
 
   #menu{
     margin-top: 0;
+    width: 60%;
   }
 
   #menu img{
-    width: 70%;
+    width: 60%;
+    height: 17%;
+    left: 25%;
+    top: 8%;
   }
 
   #menu ul {
-    top: 200px;
+    top: 30%;
+    margin-left: 4%;
 }
 
   #menu ul li { 
-    font-size: 18px;
+    font-size: 19px;
   }
 
   #menu ul li a:hover {
@@ -116,17 +121,17 @@
   }
 
   .social a[href*="facebook.com"] {
-    bottom: -35%;
+    bottom: -30%;
     margin-left: 13%;
   }
 
   .social a[href*="linkedin.com"] {
-    bottom: -35%;
+    bottom: -30%;
     margin-left: 45%;
   }
 
   .social a[href*="github.com"] {
-    bottom: -36%;
+    bottom: -31%;
     margin-left: 78%;
   }
 
